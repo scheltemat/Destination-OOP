@@ -1,5 +1,7 @@
 class Bag {
-
+    constructor(weight, id, person) {
+        
+    }
 
 }
 
