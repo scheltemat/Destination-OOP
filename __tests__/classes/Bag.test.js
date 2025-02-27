@@ -25,4 +25,10 @@ describe('Bag', () => {
         const bag = new Bag(10, 1, 'John Doe');
         expect(bag.getOwner()).toBe('John Doe');
     });
+    
+    test('should update owner using assignOwner', () => {
+        const bag = new Bag(10, 1);
+        bag.assignOwner('Jane Doe');
+        expect(bag.getOwner()).toBe('Jane Doe');
+    });
 });
