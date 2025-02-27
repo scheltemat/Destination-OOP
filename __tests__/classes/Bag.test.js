@@ -15,4 +15,9 @@ describe('Bag', () => {
         const bag = new Bag(10, 1, 'John Doe');
         expect(bag.id).toBe(1);
     });
+        
+    test('should assign the correct owner', () => {
+        const bag = new Bag(10, 1, 'John Doe');
+        expect(bag.owner).toBe('John Doe');
+    });
 });
