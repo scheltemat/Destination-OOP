@@ -5,6 +5,9 @@ class Bag {
         this.id = id;
         this.#owner = person;
     }
+    getOwner() {
+        return this.#owner;
+    }
 }
 
 

@@ -21,4 +21,8 @@ describe('Bag', () => {
         expect(bag.owner).toBeNull();
     });
     
+    test('should get the correct owner using getOwner', () => {
+        const bag = new Bag(10, 1, 'John Doe');
+        expect(bag.getOwner()).toBe('John Doe');
+    });
 });
